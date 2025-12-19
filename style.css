@@ -1,0 +1,109 @@
+/* ---------- General page styling ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+/* ---------- Main title ---------- */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+/* ---------- Section styling ---------- */
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Section headings ---------- */
+h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+/* ---------- Form labels and inputs ---------- */
+label {
+    display: block;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* ---------- Buttons ---------- */
+button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* ---------- Table styling ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ecf0f1;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+tr:hover {
+    background-color: #f1f7ff;
+}
+
+/* ---------- Horizontal rule ---------- */
+hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}

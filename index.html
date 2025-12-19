@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playlist Sorting Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Playlist Sorting Tool</h1>
+
+    <!-- Playlist Selection -->
+    <section>
+        <h2>Select Playlist</h2>
+
+        <select id="playlistSelector">
+            <option value="">-- Choose a Playlist --</option>
+            <option value="smallPlaylist">Small Playlist (12 Songs)</option>
+            <option value="largePlaylist">Large Playlist (63 Songs)</option>
+            <option value="customPlaylist">Custom Playlist</option>
+        </select>
+
+        <br><br>
+
+        <button type="button" id="loadPlaylistBtn">Load Playlist</button>
+    </section>
+
+    <hr>
+
+<section>
+    <h2>Add Song</h2>
+
+    <label>Title
+        <input type="text" id="newTitle">
+    </label>
+
+    <label>Artist
+        <input type="text" id="newArtist">
+    </label>
+
+    <label>Duration (seconds)
+        <input type="number" id="newDuration">
+    </label>
+
+    <label>Streams
+        <input type="number" id="newListened">
+    </label>
+
+    <br>
+    <button type="button" id="addSongBtn">Add Song</button>
+</section>
+
+    <hr>
+
+    <!-- Sorting Options -->
+    <section>
+        <h2>Sort Playlist</h2>
+
+        <label>
+            Sort By:
+            <select id="sortKey">
+                <option value="title">Title</option>
+                <option value="artist">Artist</option>
+                <option value="duration">Duration</option>
+                <option value="listened">Streams</option>
+            </select>
+        </label>
+
+        <br><br>
+
+        <label>
+            Algorithm:
+            <select id="sortAlgorithm">
+                <option value="bubble">Bubble Sort(Recommended for Small Playlists)</option>
+                <option value="merge">Merge Sort(Recommended for Large Playlists)</option>
+            </select>
+        </label>
+
+        <br><br>
+
+        <label>
+            Order:
+            <select id="sortOrder">
+                <option value="asc">Ascending(A-Z)</option>
+                <option value="desc">Descending(Z-A)</option>
+            </select>
+        </label>
+
+        <br><br>
+
+        <button type="button" id="sortBtn">Sort Playlist</button>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Performance</h2>
+        <p><strong>Algorithm:</strong> <span id="perfAlgo">-</span></p>
+        <p><strong>Order:</strong> <span id="perfOrder">-</span></p>
+        <p><strong>Comparisons:</strong> <span id="perfComparisons">0</span></p>
+        <p><strong>Time:</strong> <span id="perfTime">0</span> ms</p>
+    </section>
+
+    <hr>
+
+    <!-- Playlist Display -->
+    <section>
+        <h2>Playlist</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Duration (s)</th>
+                    <th>Streams</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="playlistTable"></tbody>
+        </table>
+    </section>
+
+    <script src="songs.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
